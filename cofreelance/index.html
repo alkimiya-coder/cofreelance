@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Coffreelance | Soulful Taste of Brews</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#product">Product</a></li>
+					<li><a href="#testimony">Testimony</a></li>
+					<li><a href="#founder">Founder</a></li>
+					<li></li>
+				</ul>
+			</nav>
+			<div
+				class="jumbotron"
+				style="
+					background-image: url(assets/marcos-paulo-prado-hro2v2ZnGhU-unsplash.jpg);
+				"
+			>
+				<!-- <div class="hero">
+					<img
+						src="assets/marcos-paulo-prado-hro2v2ZnGhU-unsplash.jpg"
+						alt=""
+					/>
+				</div> -->
+				<div class="cta">
+					<h1>Soulful Taste of Brews</h1>
+					<p>recharge your spirit with a cup of coffe</p>
+					<button><a href="#myBtn">order now!</a> </button>
+				</div>
+			</div>
+		</header>
+		<main>
+			<article>
+				<section>
+					<div class="hot-menu">
+						<ul class="tooltip">
+							<li>
+								<img
+									src="assets/mohammad-amirahmadi-tk2ifGN60xo-unsplash.jpg"
+									alt=""
+								/>
+								<br />
+								Capuchino
+							</li>
+							<li>
+								<img src="assets/one-zen-SKoZa7rcLlU-unsplash.jpg" alt="" />
+								<br />
+								Original Coffee
+							</li>
+							<li>
+								<img
+									src="assets/nathan-dumlao-vZOZJH_xkUk-unsplash.jpg"
+									alt=""
+								/>
+								<br />
+								Iced Latte
+							</li>
+							<span style="font-size:medium;" class="tooltiptext"><a href="#myBtn">Order Now!</a></span>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h2>Menu</h2>
+					<div class="menu">
+						<div
+							class="panel active"
+							style="
+								background-image: url(/assets/mohammad-amirahmadi-tk2ifGN60xo-unsplash.jpg);
+							"
+						>
+							<h3>Hot Drink</h3>
+							<table cellpadding="5px">
+								<tr>
+									<td>Hot Capucino</td>
+									<td>15k</td>
+								</tr>
+								<tr>
+									<td>Mocca</td>
+									<td>15k</td>
+								</tr>
+								<tr>
+									<td>Latte</td>
+									<td>15k</td>
+								</tr>
+								<tr>
+									<td>Black Original Coffe</td>
+									<td>10k</td>
+								</tr>
+								<tr>
+									<td>Espresso</td>
+									<td>12k</td>
+								</tr>
+							</table>
+						</div>
+						<div
+							class="panel"
+							style="
+								background-image: url(/assets/nathan-dumlao-vZOZJH_xkUk-unsplash.jpg);
+							"
+						>
+							<h3>Cold Drink</h3>
+							<table cellpadding="5px">
+								<tr>
+									<td>Capucino</td>
+									<td>15k</td>
+								</tr>
+								<tr>
+									<td>Mocca</td>
+									<td>15k</td>
+								</tr>
+								<tr>
+									<td>Latte</td>
+									<td>10k</td>
+								</tr>
+							</table>
+						</div>
+						<div
+							class="panel"
+							style="
+								background-image: url(/assets/jana-yJd4jmyDIF0-unsplash.jpg);
+							"
+						>
+							<h3>Food</h3>
+							<table cellpadding="5px">
+								<tr>
+									<td>Dimsum</td>
+									<td>15k</td>
+								</tr>
+								<tr>
+									<td>Carameled Banana</td>
+									<td>15k</td>
+								</tr>
+								<tr>
+									<td>Grilled Steak</td>
+									<td>40k</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</section>
+				<section id="product">
+					<div style="
+						display: flex;
+						margin-top: 50px; 
+						justify-content: space-around;
+					">
+						<button id="myBtn">Order Now</button>
+					</div>
+					<div id="myModal" class="modal">
+						<div class="modal-content">
+							<div class="modal-header">
+								<span class="close">&times;</span>
+								<h2>What can i do for you?</h2>
+							</div>
+							<div class="modal-body">
+								<form action="">
+									<fieldset>
+									<legend>Hot Drink</legend><br>
+									<input type="number">
+									<label for="drink">Capucino</label><br>
+									<input type="number">							
+									<label for="drink">Mocca</label><br>
+									<input type="number">							
+									<label for="drink">Latte</label><br>
+									<input type="number">							
+									<label for="drink">Espresso</label><br>
+									<input type="number">							
+									<label for="drink">Original</label><br>
+									</fieldset>			
+									<fieldset>
+										<legend>Cold Drink</legend><br>
+									<input type="number">
+									<label for="drink">Capucino</label><br>
+									<input type="number">							
+									<label for="drink">Mocca</label><br>
+									<input type="number">							
+									<label for="drink">Latte</label><br>
+									</fieldset>												
+									<fieldset>
+										<legend>Food</legend><br>
+									<input type="number">
+									<label for="drink">Dimsum</label><br>
+									<input type="number">							
+									<label for="drink">Carameled Banana</label><br>
+									<input type="number">							
+									<label for="drink">Grilled steak</label><br>
+									</fieldset>
+									<input class="btn btn-success" type="submit" value="Order">
+									<input class="btn btn-reset" type="reset" value="Reset">											
+								</form>
+
+							</div>
+							<div class="modal-footer">
+								<h6>Coffreelance 4 ur inspiration</h6>
+							</div>
+						</div>
+					</div>
+
+				</section>
+			</article">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#9E7676" fill-opacity="1" d="M0,256L288,224L576,192L864,288L1152,288L1440,128L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path></svg>
+			<article style="background: #9E7676; margin-top: -10px; padding-bottom: 50px;">
+				<section id="testimony">
+					<h2>What they said!</h2>
+					<div class="container">
+						<div class="card">
+							<div class="card-head">
+								<div class="avatar">
+									<img src="/assets/ikhsan.png" alt="" />
+								</div>
+								<div>
+									<h3>Abu Abdillah</h3>
+								</div>
+							</div>
+							<div class="card-body">
+								<p>
+									Wow! un bielivable. I can got delecious coffe on this small
+									city
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-head">
+								<div class="avatar">
+									<img src="/assets/ikhsan.png" alt="" />
+								</div>
+								<div>
+									<h3>Abu Abbas</h3>
+								</div>
+							</div>
+							<div class="card-body">
+								<p>
+									Wow! un bielivable. I can got delecious coffe on this small
+									city
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-head">
+								<div class="avatar">
+									<img src="/assets/ikhsan.png" alt="" />
+								</div>
+								<div>
+									<h3>Abu Muhammad</h3>
+								</div>
+							</div>
+							<div class="card-body">
+								<p>
+									Wow! un bielivable. I can got delecious coffe on this small
+									city
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</article>
+			<aside id="founder">
+				
+				<h2>Biodata Founder</h2>
+				<div class="biodata" style="text-align: center">
+					<div class="picborder">
+						<img
+							style="
+								border-style: solid;
+								border-width: 5px;
+								border-color: bisque;
+								border-radius: 50%;
+							"
+							src="assets/ikhsan.png"
+							alt=""
+						/>
+					</div>
+					<div class="alamat">
+						<div style="margin: 5% 0 -5% 0">
+							<table style="margin-top: 5%; font-size: large;" >
+								<tr>
+									<td>Nama</td>
+									<td>Muhammad Nur Ikhsan</td>
+								</tr>
+								<tr>
+									<td>Pekerjaan</td>
+									<td>Freelancer, Guru</td>
+								</tr>
+								<tr>
+									<td>Pendidikan</td>
+									<td>Strata II - Pendidikan IPA</td>
+								</tr>
+								<tr>
+									<td>Asal</td>
+									<td>Kabupaten Rejang Lebong, Provinsi Bengkulu, Indonesia</td>
+								</tr>
+								<tr>
+									<td>Website</td>
+									<td>https://alkimiya-coder.github.io/myportpolio</td>
+								</tr>
+								<tr>
+									<td>email</td>
+									<td>nurikhsanm08@gmail.com</td>
+								</tr>
+								<tr>
+									<td>Quotes</td>
+									<td>
+										Pahitnya kopi akan terasa lezat ketika kita menikmatinya.
+										Begitu pula dengan nasihat, akan terasa bermanfaat ketika
+										kita ikhlas menerimanya
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</main>
+		<footer>
+			<div class="fbody">
+				<div>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#product">Product</a></li>
+						<li><a href="#testimony">Testimony</a></li>
+						<li><a href="#founder">Founder</a></li>
+						<li><a href="https://www.gmail.com">Contact Us</a></li>
+					</ul>
+				</div>
+				<div>
+					<ul >
+						<li class="tooltip">
+							TRY OUR HOT MENU
+							<span class="tooltiptext"><a href="#myBtn">Order Now!</a></span>
+						</li>
+						
+						<li>
+							<img
+								src="assets/mohammad-amirahmadi-tk2ifGN60xo-unsplash.jpg"
+								alt=""
+							/>
+							<br />
+							<h5>Capuchino</h5>
+						</li>
+						<li>
+							<img src="assets/one-zen-SKoZa7rcLlU-unsplash.jpg" alt="" />
+							<br />
+							<h5>Original Coffee</h5>
+						</li>
+						<li>
+							<img
+								src="assets/nathan-dumlao-vZOZJH_xkUk-unsplash.jpg"
+								alt=""
+							/>
+							<br />
+							<h5>Iced Latte</h5>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="f-copyright">
+				<h6>Copyright@cofreelance.2022.Curup</h6>
+			</div>
+		</footer>
+		<script src="/JS/script.js"></script>
+	</body>
+</html>
